@@ -1,0 +1,45 @@
+URL:https://rozetka.com.ua/357398823/p357398823/
+
+XPATH:
+1. //div[@class='product__heading']/child::h1[@class='product__title']
+2.//ul[@class='tabs__list']//a[contains(@href,'characteristics')]/../preceding-sibling::li/a
+3.//p[@class='product-seller__title']/descendant::strong[@class='ng-star-inserted']
+4.//rz-status-label[contains(@class,'mode-lite product-price')]/preceding-sibling::p
+5.//rz-delivery-in/descendant::p
+6.//rz-rating-stars/following-sibling::div/b
+7.//label[@class='service__item service__item--first']
+8.//div[contains(@class,'about__text')]/div
+9.//rz-lazy-render/div/button
+10.//rz-related-products//h3
+11. //rz-text-content//ancestor::div[contains(@class,'description-content text product')]/../h2
+12.//rz-text-content//ancestor::div[contains(@class,'description-content text product')]/h2
+13.//div[contains(@class,'about__characteristics')]/child::h2
+14.//div[@class='form__row']/label[@for='nedostatki']
+15.//fieldset//label[@for='comment-text']
+16.//div[@class='add-video__input']/child::label[@for='videoUrl']
+17.//div[@class='add-video__input']/child::label[@for='videoUrl']/following-sibling::input
+18.//div[@class='add-video__form']/child::button
+19.//rz-product-add-comments//div[@class='form__row']//a
+20//ul[@class='footer-stores__buttons']//img[@alt='Google Play']
+
+XPATH & CSS:
+1.//ul[@class='tabs__list']//a[contains(@href,'characteristics')]
+    ul.tabs__list a[href*='characteristics']
+2.//app-buy-button//span[contains(@class,'buy-button__label')]
+    app-buy-button span[class*='buy-button__label']
+3.//rz-delivery-in/descendant::button[@class='button button_type_link']
+    rz-delivery-in button.button.button_type_link
+4.//div[@class='wish-wrapper']//p
+    div.wish-wrapper p
+5.//div[@class='product-about__block-item']//button
+    div.product-about__block-item button
+6.//div[@class='form__row']/child::label[@for='dostoinstva']
+    div.form__row > label[for='dostoinstva']
+7.//div[@class='form__row']/child::label[@for='dostoinstva']/following-sibling::input
+    div.form__row > label[for='dostoinstva'] + input
+8.//div[@class='add-photos__label']/div/p[contains(@class,'heading')]
+    div.add-photos__label div p[class*='heading']
+9.//div[@class='add-photos__form']/form[contains(@class,'photos__input ')]/label
+    div.add-photos__form form[class*='photos__input '] label
+10//div[@class='add-comment__buttons']/button
+    div.add-comment__buttons button
